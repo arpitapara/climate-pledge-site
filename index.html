@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Climate Action Pledge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Join the Climate Action Movement</h1>
+    <p>Take a pledge for a better planet</p>
+    <button onclick="document.getElementById('pledge-form').scrollIntoView({ behavior: 'smooth' })">
+      Take the Pledge
+    </button>
+  </section>
+
+  <!-- KPI SECTION -->
+  <section class="kpi">
+    <h2>Live Impact</h2>
+    <div class="kpi-boxes">
+      <div>Target: 1,000,000</div>
+      <div>Total Pledges: <span id="totalPledges">0</span></div>
+      <div>Students: <span id="studentsCount">0</span></div>
+      <div>Working Professionals: <span id="professionalsCount">0</span></div>
+    </div>
+  </section>
+
+  <!-- WHY SECTION -->
+  <section class="why">
+    <h2>Why Take Climate Action?</h2>
+    <p>Every small step adds up. By making climate-positive choices, you're contributing to a global movement for sustainability.</p>
+  </section>
+
+  <!-- PLEDGE FORM SECTION -->
+  <section id="pledge-form" class="form-section">
+    <h2>Make Your Pledge</h2>
+    <form id="form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Mobile Number" required />
+      <input type="text" placeholder="State" />
+      <select>
+        <option>Student</option>
+        <option>Working Professional</option>
+        <option>Other</option>
+      </select>
+
+ <!-- Commitment Section -->
+<div class="commitments">
+  <p><strong>Select your commitments:</strong></p>
+
+  <div class="theme-row">
+    <div class="theme energy">
+  <h4>🌱 Energy</h4>
+  <label>Use solar energy <input type="checkbox" name="energy" value="solar" /></label>
+  <label>Turn off lights <input type="checkbox" name="energy" value="lights" /></label>
+  <label>Unplug appliances <input type="checkbox" name="energy" value="appliances" /></label>
+</div>
+
+<div class="theme waste">
+  <h4>♻️ Waste</h4>
+  <label>Recycle plastic <input type="checkbox" name="waste" value="recycle" /></label>
+  <label>Reuse materials <input type="checkbox" name="waste" value="reuse" /></label>
+  <label>Avoid disposables <input type="checkbox" name="waste" value="reduce" /></label>
+</div>
+
+<div class="theme water">
+  <h4>💧 Water</h4>
+  <label>Short showers <input type="checkbox" name="water" value="short-shower" /></label>
+  <label>Fix leaks <input type="checkbox" name="water" value="leak" /></label>
+  <label>Use bucket not hose <input type="checkbox" name="water" value="bucket" /></label>
+</div>
+
+  </div>
+</div>
+
+
+      <button type="submit">Submit & Generate Certificate</button>
+    </form>
+    <p class="privacy-note">*Email and Mobile are for validation only and never shared publicly.</p>
+  </section>
+
+  <!-- Certificate Section -->
+<section id="certificate-section" style="display: none; padding: 30px; background: #fff3cd; margin: 20px; border-radius: 10px; text-align: center;">
+  <h2>Your Climate Hero Certificate</h2>
+  <div id="certificate-content">
+    <!-- Certificate details will be inserted here -->
+  </div>
+</section>
+
+
+  <!-- PLEDGE WALL -->
+  <section class="pledge-wall">
+    <h2>Public Pledge Wall</h2>
+    <table id="pledgeTable">
+      <tr><th>ID</th><th>Name</th><th>Date</th><th>State</th><th>Profile</th><th>🌍 Love for Planet</th></tr>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
