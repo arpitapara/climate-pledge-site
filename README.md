@@ -4,7 +4,6 @@ This is a responsive single-page microsite built to promote climate awareness an
 
 ## 🔗 Live Site
 [Visit the live site on Netlify](https://climate-pledge-site.netlify.app/)  
-*(Replace the URL with your actual Netlify link)*
 
 ---
 
